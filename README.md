@@ -4,7 +4,7 @@ Welcome to the Alaska Airlines ACE coding exercise!
 
 ## Prompt
 
-Our call center agents are frequently asked to look up flight information when choosing routes for our guests. Use the provided skeleton application to provide our agents with a form that lets them search for flights and displays the results.
+Our call center agents are frequently asked to look up flight information when choosing routes for our guests. Use the provided skeleton application build a form for our agents that lets them search for flights and displays the results.
 
 ### Requirements
 
