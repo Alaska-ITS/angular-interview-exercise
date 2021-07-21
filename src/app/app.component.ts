@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from '../environments/environment';
 import { FlightsService } from './flights.service';
 
 @Component({
