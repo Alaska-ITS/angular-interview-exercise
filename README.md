@@ -1,6 +1,6 @@
-# ace-interview-exercise
+# angular-interview-exercise
 
-Welcome to the Alaska Airlines ACE coding exercise!
+Welcome to the Alaska Airlines Angular coding exercise!
 
 ## Getting Started
 
@@ -12,16 +12,18 @@ Welcome to the Alaska Airlines ACE coding exercise!
 
 ### Initial Setup
 
-1. Open `environment.ts` and replace the `apiKey` value with your API key
+1. Create a [GitHub account](https://github.com/) if you do not have one already
+1. Fork this repository
+1. Open `environment.ts` and replace the `apiKey` value with your API key.
 1. Run `ng serve` in a terminal
-1. Open your browser and navigate to to [http://localhost:4200/](http://localhost:4200/)
+1. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
 1. If things are configured correctly you should see text after "Health Ping Result"
 
 ## Prompt
 
 Our call center agents are frequently asked to look up flight information when choosing routes for our guests. Use the provided skeleton application build a form for our agents that lets them search for flights and displays the results.
 
-### Requirements
+### Acceptance Criteria
 
 * The form has three input fields: Origin, Destination and Flight Date.
   * Origin and Destination are both three letter airport codes, such as "SEA" and "PHX"
@@ -35,4 +37,5 @@ Here are a few things to keep in mind as you work through this exercise:
 
 * The code provided is not perfect! We value a "refactor mentality" so don't feel like you should leave the existing skeleton as is.
 * Try to exercise quality software engineering practices such as separation of concerns and test automation.
+* Please check in early and check in often. We'd like to use your git history to see your process.
 * Please do not check your API key in and push it to source control.

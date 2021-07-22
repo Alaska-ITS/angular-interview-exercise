@@ -21,6 +21,14 @@ $text-background-color: #f7f7f7;
   background-color: $as-dark-blue;
   color: white;
   padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Main Content Block */
