@@ -39,3 +39,13 @@ Here are a few things to keep in mind as you work through this exercise:
 * Try to exercise quality software engineering practices such as separation of concerns and test automation.
 * Please check in early and check in often. We'd like to use your git history to see your process.
 * Please do not check your API key in and push it to source control.
+
+## API Key Generation
+
+A prerequisite for giving this exercise out is to generate an API key for the candidate to use.
+
+1. Open the QA Gateway (APIM). _Not_ production.
+1. Look for the INTERVIEW product
+1. Add a new subscription
+
+Your profile page will now have an API key that can be shared with the candidate. Cancel this key after the interview loop is complete.
