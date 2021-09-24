@@ -8,6 +8,15 @@
     <strong>Health Ping Result:</strong> {{healthPing | async}}
   </p>
 
+  <ul *ngIf = "flights$ | async">
+    <li *ngFor = "let flight of flights$ | async">
+      <pre>
+        {{ flight | json }}
+      </pre
+    >
+    </li>
+  </ul>
+
 </div>
 <footer class="footer">
   Original Repository: <a href="https://github.com/Alaska-ITS/angular-interview-exercise">angular-interview-exercise</a>
