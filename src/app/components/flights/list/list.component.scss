@@ -1,0 +1,29 @@
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  padding: 50px 0;
+}
+
+section * {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    background: #333333;
+}
+.row {
+  display: flex;
+  text-align: center;
+  padding: 8px;
+}
+
+.col {
+  flex: 1;
+}

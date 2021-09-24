@@ -1,4 +1,4 @@
-<label for="origin">Origin</label>
+<!-- <label for="origin">Origin</label>
 <input
   id="origin"
   type="text"
@@ -38,4 +38,57 @@
   (ngModelChange)="nonStopOnlyChange.emit($event)"
 />
 <br />
-<button type="button" (click)="getFlightsHandler()">Get me flights</button>
+<button type="button" (click)="getFlightsHandler()">Get me flights</button> -->
+
+<div class="container">
+    <ul class="flex-outer">
+      <li>
+        <label for="origin">Origin</label>
+        <input
+          id="origin"
+          type="text"
+          [ngModel]="origin"
+          (ngModelChange)="originChange.emit($event)"
+        />
+      </li>
+      <li>
+        <label for="destination">Destination</label>
+        <input
+          id="destination"
+          type="text"
+          [ngModel]="destination"
+          (ngModelChange)="destinationChange.emit($event)"
+        />
+      </li>
+      <li>
+        <label for="fromDate">From Date</label>
+        <input
+          id="fromDate"
+          type="date"
+          [ngModel]="fromDate"
+          (ngModelChange)="fromDateChange.emit($event)"
+        />
+      </li>
+      <li>
+        <label for="toDate">To Date</label>
+        <input
+          id="toDate"
+          type="date"
+          [ngModel]="toDate"
+          (ngModelChange)="toDateChange.emit($event)"
+        />
+      </li>
+      <li>
+        <label for="nonStopOnly">Non Stop Only</label>
+        <input
+          id="nonStopOnly"
+          type="checkbox"
+          [ngModel]="nonStopOnly"
+          (ngModelChange)="nonStopOnlyChange.emit($event)"
+        />
+      </li>
+      <li>
+        <button type="button" (click)="getFlightsHandler()">Get me flights</button>
+      </li>
+    </ul>
+</div>

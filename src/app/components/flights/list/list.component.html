@@ -1,6 +1,36 @@
-<ul>
+<!-- <ul>
   <app-list-item
     *ngFor="let flight of flights"
     [flight]="flight"
   ></app-list-item>
-</ul>
+</ul> -->
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Flight Number</th>
+      <th>Departure Time</th>
+      <th>Arrival Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flight of flights">
+      <td>{{flight.flightDetails.operatingFlightNumber}}</td>
+      <td *ngFor="let flight of flight.flightDetails.flightLegs">{{flight.actualdatetimeutc.out | date: 'mediumTime'}}</td>
+      <td *ngFor="let flight of flight.flightDetails.flightLegs">{{flight.actualdatetimeutc.in | date: 'mediumTime'}}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<section>
+  <header>
+    <div class="col">Flight Number</div>
+    <div class="col">Departure Time</div>
+    <div class="col">Arrival Time</div>
+  </header>
+  <div class="row" *ngFor="let flight of flights">
+    <div class="col">{{flight.flightDetails.operatingFlightNumber}}</div>
+    <div class="col" *ngFor="let flight of flight.flightDetails.flightLegs">{{flight.actualdatetimeutc.out | date: 'mediumTime'}}</div>
+    <div class="col" *ngFor="let flight of flight.flightDetails.flightLegs">{{flight.actualdatetimeutc.in | date: 'mediumTime'}}</div>
+  </div>
+</section>
