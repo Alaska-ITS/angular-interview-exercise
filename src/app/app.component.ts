@@ -10,7 +10,6 @@ import { Flight } from './models/flight';
 })
 export class AppComponent implements OnInit {
   healthPing: Observable<string>;
-  flights$: Observable<Flight[]> = this.flightService.getFlights("SEA", "LAX", "2021-07-25", "2021-07-25", false);
 
   constructor(private flightService: FlightsService) {
 

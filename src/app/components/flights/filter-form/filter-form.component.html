@@ -1,1 +1,41 @@
-<p>filter-form works!</p>
+<label for="origin">Origin</label>
+<input
+  id="origin"
+  type="text"
+  [ngModel]="origin"
+  (ngModelChange)="originChange.emit($event)"
+/>
+<br />
+<label for="destination">Destination</label>
+<input
+  id="destination"
+  type="text"
+  [ngModel]="destination"
+  (ngModelChange)="destinationChange.emit($event)"
+/>
+<br />
+<label for="fromDate">From Date</label>
+<input
+  id="fromDate"
+  type="text"
+  [ngModel]="fromDate"
+  (ngModelChange)="fromDateChange.emit($event)"
+/>
+<br />
+<label for="toDate">Origin</label>
+<input
+  id="toDate"
+  type="text"
+  [ngModel]="toDate"
+  (ngModelChange)="toDateChange.emit($event)"
+/>
+<br />
+<label for="nonStopOnly">Non Stop Only</label>
+<input
+  id="nonStopOnly"
+  type="checkbox"
+  [ngModel]="nonStopOnly"
+  (ngModelChange)="nonStopOnlyChange.emit($event)"
+/>
+<br />
+<button type="button" (click)="getFlightsHandler()">Get me flights</button>

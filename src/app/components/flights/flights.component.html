@@ -1,1 +1,14 @@
-<p>flights works!</p>
+<app-filter-form
+  [(origin)]="origin"
+  [(destination)]="destination"
+  [(fromDate)]="fromDate"
+  [(toDate)]="toDate"
+  [(nonStopOnly)]="nonStopOnly"
+  (getFlights)="getFlightsHandler()"
+></app-filter-form>
+<ng-container *ngIf="flights$ | async as flights; else loading">
+  <app-list [flights]="flights"></app-list>
+</ng-container>
+<ng-template #loading>
+  <p>Loading....</p>
+</ng-template>

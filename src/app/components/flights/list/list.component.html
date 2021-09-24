@@ -1,1 +1,6 @@
-<p>list works!</p>
+<ul>
+  <app-list-item
+    *ngFor="let flight of flights"
+    [flight]="flight"
+  ></app-list-item>
+</ul>

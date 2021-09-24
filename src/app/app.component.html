@@ -8,14 +8,7 @@
     <strong>Health Ping Result:</strong> {{healthPing | async}}
   </p>
 
-  <ul *ngIf = "flights$ | async">
-    <li *ngFor = "let flight of flights$ | async">
-      <pre>
-        {{ flight | json }}
-      </pre
-    >
-    </li>
-  </ul>
+  <app-flights></app-flights>
 
 </div>
 <footer class="footer">
