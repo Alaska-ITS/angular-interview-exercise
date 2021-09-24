@@ -4,10 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FlightsComponent } from './components/flights/flights.component';
+import { FilterFormComponent } from './components/flights/filter-form/filter-form.component';
+import { ListComponent } from './components/flights/list/list.component';
+import { ListItemComponent } from './components/flights/list/list-item/list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FlightsComponent,
+    FilterFormComponent,
+    ListComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
