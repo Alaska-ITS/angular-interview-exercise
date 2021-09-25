@@ -45,9 +45,43 @@ $text-background-color: #f7f7f7;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; 
+  right: 0;
 }
 
 .main {
   flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: #e7e7e7;
+  padding: 24px;
+  display: block;
+}
+
+.navbar ul a:hover,
+.navbar ul a:focus,
+.navbar ul .active {
+  background-color: #272727;
 }

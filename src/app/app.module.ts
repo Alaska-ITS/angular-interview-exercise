@@ -2,13 +2,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlightsComponent } from './components/flights/flights.component';
 import { FilterFormComponent } from './components/flights/filter-form/filter-form.component';
 import { ListComponent } from './components/flights/list/list.component';
-import { ListItemComponent } from './components/flights/list/list-item/list-item.component';
+import { StatusComponent } from './components/status/status.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { ListItemComponent } from './components/flights/list/list-item/list-item
     FlightsComponent,
     FilterFormComponent,
     ListComponent,
-    ListItemComponent
+    StatusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,7 +15,7 @@ export class FilterFormComponent {
   @Output() fromDateChange = new EventEmitter<string>();
   @Input() toDate: string;
   @Output() toDateChange = new EventEmitter<string>();
-  @Input() nonStopOnly: string;
+  @Input() nonStopOnly: boolean;
   @Output() nonStopOnlyChange = new EventEmitter<boolean>();
   @Output() getFlights = new EventEmitter();
 
