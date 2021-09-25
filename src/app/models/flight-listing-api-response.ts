@@ -5,3 +5,7 @@ export interface FlightListingAPIResponse {
     flights: Flight[];
     actionResult: ActionResult;
 }
+
+export interface FlightsListingAPIErrorResponse {
+    error: string;
+}

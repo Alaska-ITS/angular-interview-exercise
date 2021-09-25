@@ -7,7 +7,10 @@
   (getFlights)="getFlightsHandler()"
 ></app-filter-form>
 <ng-container *ngIf="flights$ | async as flights; else loading">
-  <app-list [flights]="flights"></app-list>
+  <ng-container *ngIf="flights.length; else errorMessage">
+    <app-list [flights]="flights"></app-list>
+  </ng-container>
+  <p class="error">{{ flights.error }}</p>
 </ng-container>
 <ng-template #loading>
   <p>Loading....</p>
