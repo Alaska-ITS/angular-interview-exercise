@@ -14,6 +14,7 @@ Welcome to the Alaska Airlines Angular coding exercise!
 
 1. Create a [GitHub account](https://github.com/) if you do not have one already
 1. Fork this repository
+1. Run `npm install` in the project root
 1. Open `environment.ts` and replace the `apiKey` value with your API key.
 1. Run `ng serve` in a terminal
 1. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
