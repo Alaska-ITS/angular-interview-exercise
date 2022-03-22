@@ -43,6 +43,8 @@ Here are a few things to keep in mind as you work through this exercise:
 
 ## API Key Generation
 
+Candidates can ignore this part, these instructions are for the people giving the interview.
+
 A prerequisite for giving this exercise out is to generate an API key for the candidate to use.
 
 1. Open the QA Gateway (APIM). _Not_ production.
