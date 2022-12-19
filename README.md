@@ -4,9 +4,11 @@ Welcome to the Alaska Airlines Angular coding exercise!
 
 ## Getting Started
 
-If this interview is being performed as a remote coding exercise, please have the Prerequisites and Initial Setup complete before attending.
+**Important Note:** If this interview is being performed as a remote coding exercise please have the Prerequisites and Initial Setup complete before attending. You are welcome to familiarize yourself with the codebase and prompt before the interview.
 
 ### Prerequisites
+
+You will need the following installed on your local machine:
 
 * The latest LTS version of [Node.js](https://nodejs.org/en/)
 * The [Angular CLI](https://angular.io/cli)
@@ -15,12 +17,14 @@ If this interview is being performed as a remote coding exercise, please have th
 ### Initial Setup
 
 1. Create a [GitHub account](https://github.com/) if you do not have one already
-1. Fork this repository
-1. Run `npm install` in the project root
-1. Open `environment.ts` and replace the `apiKey` value with your API key.
-1. Run `ng serve` in a terminal
-1. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
-1. If things are configured correctly you should see text after "Health Ping Result"
+2. Fork this repository and clone it locally
+3. Run `npm install` in the project root
+4. Run `ng serve` in a terminal
+5. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
+6. You should see a simple Angular application.
+  * If this interview is being performed as a remote coding exercise you're ready. Please feel free to familiarize yourself with the codebase and prompt.
+7. Open `environment.ts` and replace the `apiKey` value with your API key.
+8. If things are configured correctly you should see text after "Health Ping Result"
 
 ## Prompt
 
