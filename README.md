@@ -4,6 +4,8 @@ Welcome to the Alaska Airlines Angular coding exercise!
 
 ## Getting Started
 
+If this interview is being performed as a remote coding exercise, please have the Prerequisites and Initial Setup complete before attending.
+
 ### Prerequisites
 
 * The latest LTS version of [Node.js](https://nodejs.org/en/)
