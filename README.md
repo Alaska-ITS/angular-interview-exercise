@@ -22,7 +22,7 @@ You will need the following installed on your local machine:
 4. Run `ng serve` in a terminal
 5. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
 6. You should see a simple Angular application.
-  * If this interview is being performed as a remote coding exercise you're ready. Please feel free to familiarize yourself with the codebase and prompt.
+    * If this interview is being performed as a remote coding exercise you're done with the initial setup. Please feel free to familiarize yourself with the codebase and prompt.
 7. Open `environment.ts` and replace the `apiKey` value with your API key.
 8. If things are configured correctly you should see text after "Health Ping Result"
 
