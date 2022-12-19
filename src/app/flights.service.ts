@@ -9,7 +9,19 @@ import { environment } from '../environments/environment';
 })
 export class FlightsService {
   private healthEndpoint: string = 'https://apis.qa.alaskaair.com/aag/1/guestServices/flights/ping';
-  private flightsEndpoint: string = 'https://apis.qa.alaskaair.com/aag/1/guestServices/flights/?fromDate=2021-07-25&toDate=2021-07-25&origin=SEA&destination=LAX&nonStopOnly=false';
+
+  //
+  // Example Flight Search call
+  // https://apis.qa.alaskaair.com/aag/1/guestServices/flights/scheduledrouting/flights/search?scheduledDepartureCity=SEA&scheduledDepartureDate=2023-03-01&scheduledArrivalCity=LAX&includeCancelledFlights=false&includeDepartedFlights=false
+  //
+  // scheduledDepartureCity: 3 letter airport code for the departure airport (e.g.: SEA)
+  // scheduledArrivalCity: 3 letter airport code for the arrival airport (e.g.: LAX)
+  // scheduledDepartureDate: ISO formatted departure date (e.g.: 2023-03-01)
+  // 
+  // These two parameters are required but should just be left as false
+  // includeCancelledFlights
+  // includeDepartedFlights
+  //
 
   constructor(private http: HttpClient) { }
 
