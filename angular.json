@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ace-interview-exercise:build"
+            "buildTarget": "ace-interview-exercise:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ace-interview-exercise:build:production"
+              "buildTarget": "ace-interview-exercise:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ace-interview-exercise:build"
+            "buildTarget": "ace-interview-exercise:build"
           }
         },
         "test": {
