@@ -42,5 +42,4 @@ Here are a few things to keep in mind as you work through this exercise:
 * The code provided is not perfect! We value a "refactor mentality" so don't feel like you should leave the existing skeleton as is.
 * Try to exercise quality software engineering practices such as separation of concerns and test automation.
 * Please check in early and check in often. We'd like to use your git history to see your process.
-* Please do not check your API key in and push it to source control.
 
