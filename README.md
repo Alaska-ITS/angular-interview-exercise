@@ -31,8 +31,9 @@ Create a simple Angular application that presents the user with a list of weathe
 ### Acceptance Criteria
 
 * Use the [National Weather Service API](https://www.weather.gov/documentation/services-web-api#/default/station_observation_list) to gather weather information.
-* Station List can be retrieved from: https://api.weather.gov/stations?limit=100
+* The Station List can be retrieved from: https://api.weather.gov/stations?limit=100
 * Current weather information can be retrieved from: https://api.weather.gov/stations/{StationID}/observations?limit=1
+* For the station list please present the station name: `features[x].properties.name`
 
 ### Keys to Success
 
