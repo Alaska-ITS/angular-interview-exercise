@@ -23,20 +23,16 @@ You will need the following installed on your local machine:
 5. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/)
 6. You should see a simple Angular application.
     * If this interview is being performed as a remote coding exercise you're done with the initial setup. Please feel free to familiarize yourself with the codebase and prompt.
-7. Open `environment.ts` and replace the `apiKey` value with your API key.
-8. If things are configured correctly you should see text after "Health Ping Result"
 
 ## Prompt
 
-Our call center agents are frequently asked to look up flight information when choosing routes for our guests. Use the provided skeleton application build a form for our agents that lets them search for flights and displays the results.
+Create a simple Angular application that presents the user with a list of weather stations. When they select one of the stations they are given the current temperature for that station.
 
 ### Acceptance Criteria
 
-* The form has three input fields: Origin, Destination and Flight Date.
-  * Origin and Destination are both three letter airport codes, such as "SEA" and "PHX"
-  * Flight Date is the departure date that the guest is interested in.
-* Results are displayed in a table that shows the Flight Number, Departure Time and Arrival Time.
-* Use https://apis.qa.alaskaair.com/aag/1/guestServices/flights to gather the required information. See the example in `flights.service.ts`.
+* Use the [National Weather Service API](https://www.weather.gov/documentation/services-web-api#/default/station_observation_list) to gather weather information.
+* Station List can be retrieved from: https://api.weather.gov/stations?limit=100
+* Current weather information can be retrieved from: https://api.weather.gov/stations/{StationID}/observations?limit=1
 
 ### Keys to Success
 
@@ -47,14 +43,3 @@ Here are a few things to keep in mind as you work through this exercise:
 * Please check in early and check in often. We'd like to use your git history to see your process.
 * Please do not check your API key in and push it to source control.
 
-## API Key Generation
-
-Candidates can ignore this part, these instructions are for the people giving the interview.
-
-A prerequisite for giving this exercise out is to generate an API key for the candidate to use.
-
-1. Open the QA Gateway (APIM). _Not_ production.
-1. Look for the INTERVIEW product
-1. Add a new subscription
-
-Your profile page will now have an API key that can be shared with the candidate. Cancel this key after the interview loop is complete.
