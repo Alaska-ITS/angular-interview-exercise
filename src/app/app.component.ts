@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FlightsService } from './flights.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,12 @@ import { FlightsService } from './flights.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  healthPing: Observable<string>;
-
-  constructor(private flightService: FlightsService) {
+  constructor() {
 
   }
 
   ngOnInit(): void {
-    this.healthPing = this.flightService.getHealthPing();
+    
   }
 
 }
