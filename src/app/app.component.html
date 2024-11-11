@@ -3,6 +3,20 @@
 </header>
 
 <div class="main">
+  <div class="container">
+  <h1>List of Weather Stations</h1>
+
+  <ul>
+    <li *ngFor="let station of stations" (click)="onSelectStation(station)">
+      {{ station.properties.name }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedStation">
+    <h2>Selected station: {{ selectedStation.properties.name }}</h2>
+    <p>Current temperature: {{ temperature }}</p>
+  </div>
+</div>
 
 </div>
 
